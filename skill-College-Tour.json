@@ -1,0 +1,1437 @@
+{
+  "intents": [
+    {
+      "intent": "aboutcollege",
+      "examples": [
+        {
+          "text": "do you have management seats?"
+        },
+        {
+          "text": "how are the placement of the college?"
+        },
+        {
+          "text": "How good are the faculties of the college?"
+        },
+        {
+          "text": "how we can get admissions in this college?"
+        },
+        {
+          "text": "Is BPIT governed by some Trust?"
+        },
+        {
+          "text": "what are the facilities available in the college?"
+        },
+        {
+          "text": "Who is Chairman of the trust?"
+        },
+        {
+          "text": "Who is principal of the college?"
+        }
+      ],
+      "description": "This will tell about the college"
+    },
+    {
+      "intent": "CSE",
+      "examples": [
+        {
+          "text": "Details about CSE?"
+        },
+        {
+          "text": "do you have management seats in cse?"
+        },
+        {
+          "text": "how good is department CSE?"
+        },
+        {
+          "text": "how much experienced faculty is in the department of CSE?"
+        },
+        {
+          "text": "Tell me about CSE?"
+        },
+        {
+          "text": "Tell me about the CSE department?"
+        }
+      ],
+      "description": "Details about department CSE"
+    },
+    {
+      "intent": "General",
+      "examples": [
+        {
+          "text": "department"
+        },
+        {
+          "text": "How many departments are there in the college?"
+        },
+        {
+          "text": "how old is BPIT"
+        },
+        {
+          "text": "how old is this college?"
+        },
+        {
+          "text": "what programs are available here?"
+        },
+        {
+          "text": "When is this college started?"
+        },
+        {
+          "text": "Which all branches present in the college?"
+        },
+        {
+          "text": "which all courses are available"
+        }
+      ],
+      "description": "This will look for general questions"
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "HI"
+        },
+        {
+          "text": "Namaste"
+        }
+      ],
+      "description": "This is to greet visitors"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "aboutcollege",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "admissions",
+          "synonyms": [
+            "admission",
+            "enrolment"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "chairman",
+          "synonyms": [
+            "chair",
+            "chairperson",
+            "governed ",
+            "president",
+            "trustee"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "college",
+          "synonyms": [
+            "institute"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "facility",
+          "synonyms": [
+            "amenities",
+            "buildings",
+            "equipment",
+            "facilities",
+            "infrastructure",
+            "rooms",
+            "services"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "faculty",
+          "synonyms": [
+            "educators",
+            "faculties",
+            "lecturers",
+            "professors",
+            "teachers"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "general secretary",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "management seat",
+          "synonyms": [
+            "mgmt quota",
+            "mgmt seat",
+            "quota",
+            "trustee quota"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "placement",
+          "synonyms": [
+            "placements"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "principal",
+          "synonyms": [
+            "director ",
+            "head"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "reach",
+          "synonyms": [
+            "accessibility",
+            "bus facility",
+            "connectivity",
+            "interconnect",
+            "mode of transport",
+            "near metro station",
+            "rail",
+            "transit",
+            "transport",
+            "transportation"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "secretary",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "trust",
+          "synonyms": [
+            "charitable",
+            "nonprofit",
+            "trusts"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vice president",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "BBA",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "BBA",
+          "synonyms": [
+            "Bachelor Business Administration",
+            "Bachelor of  Business Administration"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "courses",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Engineering Courses",
+          "synonyms": [
+            "engg",
+            "engg courses"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Management Courses",
+          "synonyms": [
+            "mgmt",
+            "mgmt courses"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "CSE",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "CSE",
+          "synonyms": [
+            "Computer",
+            "Computer science",
+            "Computer Science Engineering",
+            "Computer Science & Engineering"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Electrical",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Electrical Engineering",
+          "synonyms": [
+            "EEE",
+            "Electrical & Electronics Engineering"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Electronics",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Electronics Engineering",
+          "synonyms": [
+            "ECE",
+            "Electronics & Communication Engineering"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Engineering",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Computer Science & Engineering",
+          "synonyms": [
+            "Computer ",
+            "Computer science",
+            "CSE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Electrical & Electronics Engineering",
+          "synonyms": [
+            "EEE",
+            "Electrical"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Electronics & Communication Engineering",
+          "synonyms": [
+            "ECE",
+            "Electronics "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Information Technology",
+          "synonyms": [
+            "IT"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "general",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "old",
+          "synonyms": [
+            "Established",
+            "started"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Program",
+          "synonyms": [
+            "branches",
+            "courses",
+            "department",
+            "programme"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "afternoon",
+            "GAfternoon",
+            "Gud afternoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good evening",
+          "synonyms": [
+            "evening",
+            "GE",
+            "Good eve",
+            "gud eve"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "GM",
+            "Gud Morning",
+            "gud mrng",
+            "Morn",
+            "Morning"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hello",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Namaste",
+          "synonyms": [
+            "Hello",
+            "Namaskar",
+            "Namaskar ji",
+            "Namaste ji"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Information",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Information Technology",
+          "synonyms": [
+            "IT"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Management",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "BBA",
+          "synonyms": [
+            "Bachelor of Business Administration "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "MBA",
+          "synonyms": [
+            "Master Business Administration "
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "MBA",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "MBA",
+          "synonyms": [
+            "Master Business Administration",
+            "Master of Business Administration"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_2_1601640980885",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Management",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Management",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1601641273761",
+      "previous_sibling": "node_6_1601654104857"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @greetings",
+      "dialog_node": "node_1_1601634281516",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Engineering",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Engineering",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1601640980885",
+      "previous_sibling": "node_10_1601641273761"
+    },
+    {
+      "type": "standard",
+      "title": "courses",
+      "parent": "node_9_1601637601402",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@courses:(Engineering Courses) || @courses:(Management Courses)",
+      "dialog_node": "node_6_1601639236078"
+    },
+    {
+      "type": "standard",
+      "title": "aboutcollege",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#aboutcollege || @aboutcollege",
+      "dialog_node": "node_6_1601654104857",
+      "previous_sibling": "node_9_1601637601402"
+    },
+    {
+      "type": "standard",
+      "title": "computer",
+      "output": {
+        "generic": [
+          {
+            "title": "Computer",
+            "options": [
+              {
+                "label": "Head of the Department",
+                "value": {
+                  "input": {
+                    "text": "Head of the Department"
+                  }
+                }
+              },
+              {
+                "label": "Faculties",
+                "value": {
+                  "input": {
+                    "text": "Faculties"
+                  }
+                }
+              },
+              {
+                "label": "Laboratories",
+                "value": {
+                  "input": {
+                    "text": "Laboratories"
+                  }
+                }
+              },
+              {
+                "label": "Facilities",
+                "value": {
+                  "input": {
+                    "text": "Facilities"
+                  }
+                }
+              },
+              {
+                "label": "Activities",
+                "value": {
+                  "input": {
+                    "text": "Activities"
+                  }
+                }
+              },
+              {
+                "label": "Achievement",
+                "value": {
+                  "input": {
+                    "text": "Achievement"
+                  }
+                }
+              },
+              {
+                "label": "Time Table",
+                "value": {
+                  "input": {
+                    "text": "Time Table"
+                  }
+                }
+              }
+            ],
+            "description": "Information about the Computer Science Department",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1601640980885",
+      "conditions": "#CSE || @CSE",
+      "dialog_node": "node_7_1601641974913"
+    },
+    {
+      "type": "standard",
+      "title": "general",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#General && @general",
+      "dialog_node": "node_9_1601637601402",
+      "previous_sibling": "node_1_1601634281516"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Engineering",
+            "options": [
+              {
+                "label": "Computer Science & Engineering",
+                "value": {
+                  "input": {
+                    "text": "Computer Science & Engineering"
+                  }
+                }
+              },
+              {
+                "label": "Electronics & Communication Engineering",
+                "value": {
+                  "input": {
+                    "text": "Electronics & Communication Engineering"
+                  }
+                }
+              },
+              {
+                "label": "Information Technology",
+                "value": {
+                  "input": {
+                    "text": "Information Techonology"
+                  }
+                }
+              },
+              {
+                "label": "Electrical & Electronics Engineering",
+                "value": {
+                  "input": {
+                    "text": "Electrical & Electronics Engineering"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_6_1601639236078",
+      "conditions": "@courses:(Engineering Courses)",
+      "dialog_node": "response_10_1601639323828"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "BPIT has assured the placement of BPIT students in reputed companies such as amazon, zomato, Virtusa, ByJuY’s, LibSys, IBM, Samsung, Motherson Sumi, Sopera Steria and many more."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:placement",
+      "dialog_node": "response_10_1601658058526",
+      "previous_sibling": "response_5_1601656943936"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1601634281516",
+      "conditions": "@greetings:Hi",
+      "dialog_node": "response_1_1601634591527"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Namaskar"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1601634281516",
+      "conditions": "@greetings:Namaste",
+      "dialog_node": "response_1_1601634802299",
+      "previous_sibling": "response_6_1601634782543"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "BPIT is a pioneer Institute providing education to the students of delhi and outside delhi in the field of engineering and management. It was started in year 2007."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1601637601402",
+      "conditions": "@general:old",
+      "dialog_node": "response_1_1601637946852",
+      "previous_sibling": "response_8_1601637658227"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Information Technology",
+            "options": [
+              {
+                "label": "Information Technology",
+                "value": {
+                  "input": {
+                    "text": "Information Technology"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1601640980885",
+      "conditions": "@Engineering:(Information Technology)",
+      "dialog_node": "response_1_1601641210208",
+      "previous_sibling": "response_2_1601641180877"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "MBA"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601641273761",
+      "conditions": "@Management:MBA",
+      "dialog_node": "response_1_1601641289191"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Yes. Management seats are as per University guidelines 10% of the intake."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:(management seat)",
+      "dialog_node": "response_1_1601658376162",
+      "previous_sibling": "response_10_1601658058526"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "IPU handles the centralized Admission process based on JEE ranking. However  a few management seats are available with the institute  for that one can fill the required form available at the reception."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:(admissions)",
+      "dialog_node": "response_1_1601658694251",
+      "previous_sibling": "response_1_1601658376162"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Management",
+            "options": [
+              {
+                "label": "MBA",
+                "value": {
+                  "input": {
+                    "text": "MBA"
+                  }
+                }
+              },
+              {
+                "label": "BBA",
+                "value": {
+                  "input": {
+                    "text": "BBA"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_6_1601639236078",
+      "conditions": "@courses:(Management Courses)",
+      "dialog_node": "response_2_1601639613447",
+      "previous_sibling": "response_10_1601639323828"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Computer Science",
+            "options": [
+              {
+                "label": "Computer Science",
+                "value": {
+                  "input": {
+                    "text": "Computer Science"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1601640980885",
+      "conditions": "@Engineering:(Computer Science & Engineering)",
+      "dialog_node": "response_2_1601641112361",
+      "previous_sibling": "node_7_1601641974913"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Electronics & Communication Engineering",
+            "options": [
+              {
+                "label": "Electronics & Communication Engineering",
+                "value": {
+                  "input": {
+                    "text": "Electronics & Communication Engineering"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1601640980885",
+      "conditions": "@Engineering:(Electronics & Communication Engineering)",
+      "dialog_node": "response_2_1601641180877",
+      "previous_sibling": "response_2_1601641112361"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1601634281516",
+      "conditions": "@greetings:Hello",
+      "dialog_node": "response_3_1601634762322",
+      "previous_sibling": "response_9_1601634742824"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Electrical Engineering",
+            "options": [
+              {
+                "label": "Electrical Engineering",
+                "value": {
+                  "input": {
+                    "text": "Electrical Engineering"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1601640980885",
+      "conditions": "@Engineering:(Electrical & Electronics Engineering)",
+      "dialog_node": "response_3_1601641227590",
+      "previous_sibling": "response_1_1601641210208"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sh. Atam Prakash Kaushik "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:chairman",
+      "dialog_node": "response_3_1601654302093",
+      "previous_sibling": "response_8_1601654124407"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sh. Vinod Vats"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:(general secretary)",
+      "dialog_node": "response_3_1601654541049",
+      "previous_sibling": "response_9_1601654380508"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "BPIT is a pioneer Institute providing education to the students of delhi and outside delhi in the field of engineering and management since more than a decade. BPIT is the only self financing institute affiliated to GGSIP University whose all UG engineering programs (B.Tech. CSE/IT/ ECE / EEE) are accredited by NBA (National Board of Accreditation) which in itself certifies the quality policy and standards followed in BPIT. All the labs in BPIT are well equipped. The fully dedicated placement team of BPIT has assured the placement of BPIT students in reputed companies such as amazon, zomato, Virtusa, ByJuY’s, LibSys, IBM, Samsung, Motherson Sumi, Sopera Steria and many more. BPIT is spread in an area of about 5.7 acres and has four storey building of academic and office complex with lifts. A girl student's Hostel having 64 double occupancy rooms, with all modern amenities has been constructed and furnished."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:(college)",
+      "dialog_node": "response_3_1601656262799",
+      "previous_sibling": "response_5_1601654646729"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1601634281516",
+      "conditions": "@greetings:(Good Morning)",
+      "dialog_node": "response_4_1601634725282",
+      "previous_sibling": "response_1_1601634591527"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "PadmaShri, Shri Surender Sharma"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:(Vice president)",
+      "dialog_node": "response_5_1601654564538",
+      "previous_sibling": "response_3_1601654541049"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "facilities",
+            "options": [
+              {
+                "label": "Library",
+                "value": {
+                  "input": {
+                    "text": "library"
+                  }
+                }
+              },
+              {
+                "label": "Girls Hostel",
+                "value": {
+                  "input": {
+                    "text": "hostel"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:facility",
+      "dialog_node": "response_5_1601654646729",
+      "previous_sibling": "response_7_1601654641784"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Adjacent to BPIT is the MCD Building, which houses Railway Reservation Centre. It is well connected with public transport system like DTC buses and metro shuttles. Rithala metro station on metro line 1 at distances of 1.5 and Samaypur Badli on the yellow line at 4 km."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:reach",
+      "dialog_node": "response_5_1601656943936",
+      "previous_sibling": "response_3_1601656262799"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1601634281516",
+      "conditions": "@greetings:(Good Afternoon)",
+      "dialog_node": "response_6_1601634782543",
+      "previous_sibling": "response_3_1601634762322"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sh. B. N. Sharma"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:secretary",
+      "dialog_node": "response_6_1601654612743",
+      "previous_sibling": "response_5_1601654564538"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "HI"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1601634281516",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1601635142893",
+      "previous_sibling": "response_1_1601634802299"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "faculties",
+            "options": [
+              {
+                "label": "CSE",
+                "value": {
+                  "input": {
+                    "text": "csefaculties"
+                  }
+                }
+              },
+              {
+                "label": "ECE",
+                "value": {
+                  "input": {
+                    "text": "ecefaculties"
+                  }
+                }
+              },
+              {
+                "label": "IT",
+                "value": {
+                  "input": {
+                    "text": "itfaculties"
+                  }
+                }
+              },
+              {
+                "label": "EEE",
+                "value": {
+                  "input": {
+                    "text": "eeefaculties"
+                  }
+                }
+              },
+              {
+                "label": "MBA",
+                "value": {
+                  "input": {
+                    "text": "mbafaculties"
+                  }
+                }
+              },
+              {
+                "label": "bba",
+                "value": {
+                  "input": {
+                    "text": "bbafaculties"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:faculty",
+      "dialog_node": "response_7_1601654641784",
+      "previous_sibling": "response_6_1601654612743"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Courses",
+            "options": [
+              {
+                "label": "Engineering Courses",
+                "value": {
+                  "input": {
+                    "text": "Engineering Courses"
+                  }
+                }
+              },
+              {
+                "label": "Management Courses",
+                "value": {
+                  "input": {
+                    "text": "Management Courses"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1601637601402",
+      "conditions": "@general:Program",
+      "dialog_node": "response_8_1601637658227",
+      "previous_sibling": "node_6_1601639236078"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "BBA"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601641273761",
+      "conditions": "@Management:BBA",
+      "dialog_node": "response_8_1601641365048",
+      "previous_sibling": "response_1_1601641289191"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bhagwan Parshuram Institute of Technology (BPIT) has been promoted by the Bhartiya Brahmin Charitable Trust (BBCT), which was established in year 1974. BBCT has about 380 trustees from various walks of life including several educationalist, industrialist, businessmen, architects, engineers, other professionals and also some philanthropists. The trust is constantly involved in number of charitable programs including professional education, health and upliftment of poor. Industrialist Shri Atam Prakash Kaushik, who is actively involved with the trust since its inception, is the President of the trust and Chairman of BPIT."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:trust",
+      "dialog_node": "response_8_1601654124407"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1601634281516",
+      "conditions": "@greetings:(Good evening)",
+      "dialog_node": "response_9_1601634742824",
+      "previous_sibling": "response_4_1601634725282"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Prof. Payal Pahwa"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1601654104857",
+      "conditions": "@aboutcollege:principal",
+      "dialog_node": "response_9_1601654380508",
+      "previous_sibling": "response_3_1601654302093"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am BPIT bot capable of answering your queries about BPIT. How may I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "College Tour",
+  "language": "en",
+  "description": ""
+}
